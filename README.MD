@@ -1,89 +1,105 @@
-🛒 E-Commerce Reviews Analysis using Python
+E-Commerce Reviews Analysis using Python
+
 📌 Project Overview
-This project analyzes customer reviews and ratings for BlinkIt, Zepto, and JioMart to extract insights into customer sentiment, ratings, and platform performance.
 
-Using Python (Pandas, NumPy, Seaborn, Matplotlib), the project examines trends in review counts, rating distributions, sentiment analysis, and platform comparisons to uncover key patterns in e-commerce customer feedback.  
+This project analyzes e-commerce product reviews using Python to extract insights about customer sentiment, ratings, and trends. The dataset includes customer reviews, ratings, timestamps, and product details.
 
-Ecommerce_Reviews_Analysis/
-│── dataset/                  # 📁 Contains raw and cleaned customer reviews data
-│   ├── reviews.csv           # 📌 Original dataset
-│   ├── reviews_cleaned.csv   # ✅ Cleaned dataset (generated after preprocessing)
+Using Pandas for data processing, Matplotlib & Seaborn for visualization, and NLTK for sentiment analysis, this project identifies patterns in customer feedback and evaluates product performance.
+
+📂 Project Structure
+
+E-Commerce_Reviews_Analysis/
+│── data_cleaning.py       # Cleans and preprocesses review data
+│── data_analysis.py       # Analyzes trends in ratings and reviews
+│── data_visualization.py  # Generates visual insights from data
+│── requirements.txt       # Lists required Python libraries
+│── README.md              # Project documentation
 │
-│── python_scripts/           # 📂 Python scripts for data processing and analysis
-│   ├── data_cleaning.py       # 🧼 Cleans and preprocesses the dataset
-│   ├── data_analysis.py       # 📊 Performs exploratory data analysis (EDA)
-│   ├── data_visualization.py  # 📉 Generates charts and visualizations
-│   ├── sentiment_analysis.py  # 📝 Performs sentiment analysis on reviews
-│   ├── generate_report.py     # 📄 Compiles insights into a PDF report
+├── Dataset/
+│   ├── ecommerce_reviews.csv  # E-commerce review dataset
 │
-│── reports/                  # 📂 Stores generated reports and insights
-│   ├── charts/               # 📊 Contains visualizations from analysis
-│   ├── summary.txt           # 📌 Key insights from the analysis
-│   ├── ecommerce_analysis.pdf # 📄 Comprehensive project report
-│
-│── requirements.txt          # 📜 Required Python libraries
-│── README.md                 # 📖 Project documentation 
+├── Output/                     # Stores visualization outputs
 
 ⚙️ Setup & Installation
-1️⃣ Install Dependencies
-Ensure you have Python installed, then run:
+
+1⃣ Install Dependencies
+
+Ensure you have Python and VS Code installed.
+Run the following command to install required Python libraries:
 
 pip install -r requirements.txt
-2️⃣ Download or Prepare Dataset
-📂 Place the raw dataset (reviews.csv) inside the dataset/ folder.
-📌 If you don’t have a dataset, you can collect e-commerce reviews from APIs or web scraping.
 
-3️⃣ Run Data Cleaning
-python python_scripts/data_cleaning.py
-✅ This will clean and preprocess the data, saving the cleaned version as reviews_cleaned.csv.
+2⃣ Load and Clean Data
 
-4️⃣ Perform Data Analysis
-python python_scripts/data_analysis.py
-✅ This script performs EDA (Exploratory Data Analysis) and extracts key patterns from customer reviews.
+Run the data cleaning script to preprocess the dataset:
 
-5️⃣ Generate Visualizations
-python python_scripts/data_visualization.py
-✅ Graphs and visualizations will be saved in the reports/charts/ folder.
+python data_cleaning.py
 
-6️⃣ Run Sentiment Analysis
-python python_scripts/sentiment_analysis.py
-✅ This will analyze positive, neutral, and negative sentiments in customer reviews.
+✅ The cleaned data will be stored for further analysis.
 
-7️⃣ Generate PDF Report
-python python_scripts/generate_report.py
-✅ A final report (ecommerce_analysis.pdf) will be saved inside the reports/ folder.
+3⃣ Perform Data Analysis
+
+Run the analysis script to generate insights:
+
+python data_analysis.py
+
+✅ Key trends in ratings, review frequency, and sentiment analysis will be extracted.
+
+4⃣ Visualize Results
+
+Execute the visualization script to generate graphs:
+
+python data_visualization.py
+
+✅ Graphs and insights will be saved in the Output/ folder.
 
 🔍 Key Insights from Analysis
-📊 Sentiment Trends → Proportion of positive, neutral, and negative reviews.
-⭐ Rating Distribution → Understanding how customers rate each platform.
-📦 Platform Comparisons → Analyzing which platform receives better customer feedback.
-🚚 Delivery Experience Feedback → Examining customer complaints & satisfaction levels.
+
+This project provides insights into customer reviews:
+
+📊 Sentiment Trends: Identifies positive, neutral, and negative sentiment.
+
+⭐ Product Ratings: Analyzes distribution of ratings across products.
+
+📆 Review Frequency: Determines seasonal trends in customer feedback.
 
 🛠️ Technologies Used
-🔹 Python → Pandas, NumPy, Seaborn, Matplotlib, NLP (Natural Language Processing)
-🔹 VS Code / Jupyter Notebook → Development environment
-🔹 GitHub → Version control
+
+Python: Pandas, NLTK, Matplotlib, Seaborn
+
+Jupyter Notebook / VS Code: Development environment
+
+GitHub: Version control
 
 🚀 Usage Instructions
-1️⃣ Clone the Repository
-git clone https://github.com/malve-Roshni/ecommerce-reviews-analysis.git
-cd Ecommerce_Reviews_Analysis
 
-2️⃣ Install Required Libraries
+1⃣ Clone the Repository
+
+git clone https://github.com/Malve-Roshni/ecommerce-reviews-analysis.git
+cd E-Commerce_Reviews_Analysis
+
+2⃣ Install Required Libraries
+
 pip install -r requirements.txt
 
-3️⃣ Run Data Cleaning & Analysis
-python python_scripts/data_cleaning.py
-python python_scripts/data_analysis.py
+3⃣ Run Data Cleaning
 
-4️⃣ Generate Visualizations & Insights
-python python_scripts/data_visualization.py
-python python_scripts/sentiment_analysis.py
-python python_scripts/generate_report.py
-✅ Visualizations and reports will be saved in the reports/ folder.
+python data_cleaning.py
 
-📄 About
-🛒 E-Commerce Reviews Analysis using Python is a data-driven project that extracts insights from customer feedback on BlinkIt, Zepto, and JioMart. It includes sentiment analysis, rating distribution, and platform performance evaluation with Python scripts, visualizations, and detailed reports.
+4⃣ Run Data Analysis
 
-git clone https://github.com/malve-Roshni/ecommerce-reviews-analysis.git
-📌 GitHub Repository: E-Commerce [Reviews Analysis] 
+python data_analysis.py
+
+5⃣ Generate Visualizations
+
+python data_visualization.py
+
+✅ Graphs and insights will be saved in the Output/ folder.
+
+📝 About
+
+E-Commerce Reviews Analysis using Python: A complete data pipeline for cleaning, analyzing, and visualizing customer reviews. Includes Python scripts, sentiment analysis, and detailed reports.
+
+git clone https://github.com/Malve-Roshni/ecommerce-reviews-analysis.git
+🔗 GitHub Repository: [E-Commerce Reviews Analysis] 
+
