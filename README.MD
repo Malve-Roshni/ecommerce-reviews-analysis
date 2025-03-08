@@ -81,7 +81,7 @@ This project provides insights into customer reviews, including:
 
 ### **1️⃣ Clone the Repository**
 ```bash
-git clone https://github.com/Malve-Roshni/ecommerce-reviews-analysis.git
+git clone https://github.com/Malve-Roshni/ecommerce-reviews-analysis-python.git
 cd ecommerce-reviews-analysis
 ```
 
@@ -111,5 +111,5 @@ python python_scripts/data_visualization.py
 ## 📄 About
 **E-Commerce Reviews Analysis using Python**: This project focuses on analyzing customer feedback from **BlinkIt**, **Zepto**, and **JioMart** with data cleaning, sentiment analysis, visualizations, and detailed reports.
 
-👉 **GitHub Repository:** [E-Commerce Reviews Analysis](https://github.com/Malve-Roshni/ecommerce-reviews-analysis)
+👉 **GitHub Repository:** [E-Commerce Reviews Analysis](https://github.com/Malve-Roshni/ecommerce-reviews-analysis-python)
 
